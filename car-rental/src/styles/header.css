@@ -92,6 +92,78 @@
   column-gap: 0.4rem;
   text-decoration: none;
   color: #fff;
-  justify-content: end;
+  justify-content: flex-end;
   font-size: 0.9rem;
 }
+
+/* ================== Main Navbar Styles =====================*/
+
+.main__navbar {
+  padding: 10px 0px;
+  background: #000d6b;
+}
+
+.mobile__menu i {
+  color: #fff;
+  font-size: 1.7rem;
+  cursor: pointer;
+}
+
+.mobile__menu {
+  display: none;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  column-gap: 2.7rem;
+  justify-content: center;
+  height: 100%;
+}
+
+.nav__item {
+  color: #fff;
+  text-decoration: none;
+  transition: .3s;
+}
+
+.nav__item:hover {
+  color: #fff;
+}
+
+.search__box {
+  border: 1px solid #7c8a972f;
+  padding: 7px 12px;
+  display: flex;
+  align-items: center;
+  border-radius: 50px;
+  background: #020a4de9;
+  margin-top: 5px;
+}
+
+.search__box input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.search__box input::placeholder {
+  /* color: #fff; */
+  font-size: .8rem;
+}
+
+.search__box span i {
+  color: rgb(255, 255, 255, 0.555);
+  cursor: pointer;
+}
+
+.nav__active {
+  color: #f9a826;
+}
+
+.nav__active:hover {
+  color: #f9a826;
+}
+
