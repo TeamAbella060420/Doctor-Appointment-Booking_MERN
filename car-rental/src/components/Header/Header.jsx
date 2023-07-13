@@ -1,7 +1,30 @@
 import React from "react";
 import { Container, Row, Col } from "reactstrap";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import "../../styles/header.css";
+
+const navLinks = [
+  {
+    path: "/home",
+    display: "Home",
+  },
+  {
+    path: "/about",
+    display: "About",
+  },
+  {
+    path: "/cars",
+    display: "Cars",
+  },
+  {
+    path: "/blogs",
+    display: "Blog",
+  },
+  {
+    path: "/contact",
+    display: "Contact",
+  },
+];
 
 const Header = () => {
   return (
@@ -69,7 +92,12 @@ const Header = () => {
                 </div>
               </div>
             </Col>
-            <Col lg="2" md="3" sm="4" className="text-end">
+            <Col
+              lg="2"
+              md="3"
+              sm="0"
+              className="d-flex align-items-center justify-content-end"
+            >
               <button className="header__btn btn">
                 <Link to="/contact">
                   <i class="ri-phone-line"></i> Request a call
@@ -79,7 +107,41 @@ const Header = () => {
           </Row>
         </Container>
       </div>
-      {/* ============== Header Middle ============== */}
+      {/* ============== Header Bottom ============== */}
+      <div className="main__navbar">
+        <Container>
+          <div className="navigation__wrapper d-flex align-itens-center justify-content-between">
+            <span className="mobile__menu">
+              <i class="ri-menu-line"></i>
+            </span>
+
+            <div className="navigation">
+              <div className="menu">
+                {navLinks.map((item, index) => (
+                  <NavLink
+                    to={item.path}
+                    key={index}
+                    className={(navClass) =>
+                      navClass.isActive ? "nav__active nav__item" : "nav__item"
+                    }
+                  >
+                    {item.display}
+                  </NavLink>
+                ))}
+              </div>
+            </div>
+
+            <div className="nav__right">
+              <div className="search__box">
+                <input type="text" placeholder="Search" />
+                <span>
+                  <i class="ri-search-line"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+        </Container>
+      </div>
     </header>
   );
 };
