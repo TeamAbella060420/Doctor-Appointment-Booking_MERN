@@ -124,7 +124,7 @@
 .nav__item {
   color: #fff;
   text-decoration: none;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .nav__item:hover {
@@ -151,7 +151,7 @@
 
 .search__box input::placeholder {
   /* color: #fff; */
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 .search__box span i {
@@ -166,4 +166,3 @@
 .nav__active:hover {
   color: #f9a826;
 }
-
