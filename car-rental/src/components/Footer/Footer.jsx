@@ -81,6 +81,7 @@ const Footer = () => {
                   <input type="email" name="" id="" placeholder="Email" />
                   <span>
                     <i class="ri-send-plane-line"></i>
+                    
                   </span>
               </div>
             </div>
