@@ -5,7 +5,7 @@ import Helmet from "../components/Helmet/Helmet";
 const Home = () => {
   return (
     <Helmet title="Home">
-      <section className="o-0 hero__slider-section">
+      <section className="hero__slider-section">
         <HeroSlide />
       </section>
     </Helmet>
