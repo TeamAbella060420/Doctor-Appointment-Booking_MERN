@@ -60,9 +60,9 @@ ul {
   font-size: 1.2rem;
 }
 
-.section__descripton {
-  color: #7c8a97;
-  font-size: 0.9rem;
+.section__description {
+  color: #7c8a97 !important;
+  font-size: 0.9rem !important;
 }
 
 section {
