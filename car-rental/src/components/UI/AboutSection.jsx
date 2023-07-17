@@ -20,6 +20,10 @@ const AboutSection = () => {
                 reiciendis labore delectus omnis!
               </p>
             </div>
+
+            <div className="about__section-item ">
+
+            </div>
           </Col>
           <Col lg="6" md="6"></Col>
         </Row>
