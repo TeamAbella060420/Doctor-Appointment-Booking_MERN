@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "reactstrap";
 import "../../styles/about-section.css";
+import bmw from '../../assets/all-images/cars-img/bmw-offer.png'
 
 const AboutSection = () => {
   return (
@@ -20,12 +21,28 @@ const AboutSection = () => {
                 reiciendis labore delectus omnis!
               </p>
             </div>
-
-            <div className="about__section-item ">
-
+            <div className="about__section-item d-flex align-items-center">
+              <p className="section__description d-flex align-items-center gap-2">
+              <i class="ri-checkbox-circle-line"></i> Lorem ipsum dolor sit amet.
+              </p>
+              <p className="section__description d-flex align-items-center gap-2">
+              <i class="ri-checkbox-circle-line"></i> Lorem ipsum dolor sit amet.
+              </p>
+            </div>
+            <div className="about__section-item d-flex align-items-center">
+              <p className="section__description d-flex align-items-center gap-2">
+              <i class="ri-checkbox-circle-line"></i> Lorem ipsum dolor sit amet.
+              </p>
+              <p className="section__description d-flex align-items-center gap-2">
+              <i class="ri-checkbox-circle-line"></i> Lorem ipsum dolor sit amet.
+              </p>
             </div>
           </Col>
-          <Col lg="6" md="6"></Col>
+          <Col lg="6" md="6">
+            <div className="about__img">
+              <img src={bmw} alt="" />
+            </div>
+          </Col>
         </Row>
       </Container>
     </section>
