@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <Helmet title="Home">
       {/* ==================== Hero Section ======================= */}
-      <section className="hero__slider-section">
+      <section className="p-0 hero__slider-section">
         <HeroSlide />
 
         <div className="hero__form">
