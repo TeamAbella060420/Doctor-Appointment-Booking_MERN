@@ -80,8 +80,8 @@ section {
 }
 
 .btn:hover {
-  color: #fff;
-  background: #000d6bd0;
+  color: #fff !important;
+  background: #000d6bd0 !important;
 }
 
 @media only screen and (max-width: 768px) {
