@@ -19,6 +19,10 @@
   width: 100%;
 }
 
+.form__group input::placeholder {
+  color: #7c8a97;
+}
+
 .find__cars-left h2 {
     font-weight: 600;
     font-size: 2.8rem;
@@ -48,13 +52,31 @@
 .hero__slider-section {
   position: relative;
   z-index: 10;
+  margin-bottom: 200px;
 }
 
-.hero__row {
+.hero__form {
   position: absolute;
+  bottom: -150px;
+  z-index: 11;
+  width: 100%;
 }
 
 .form__row {
     background: #fff;
     box-shadow: 5px 5px 15px -5px #7c8a97;
+}
+
+.journey__time::before {
+    content: 'Journey time';
+    margin-right: .8rem;
+    color: #7c8a97;
+}
+
+.find__car-btn {
+    background: #000d6b !important;
+    color: #fff !important;
+    padding: 8px 15px !important;
+    width: 100% !important;
+    outline: none !important;
 }
