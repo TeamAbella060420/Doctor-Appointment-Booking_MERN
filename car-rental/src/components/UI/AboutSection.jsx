@@ -40,7 +40,7 @@ const AboutSection = () => {
           </Col>
           <Col lg="6" md="6">
             <div className="about__img">
-              <img src={bmw} alt="" />
+              <img src={bmw} alt="" className="w-100"/>
             </div>
           </Col>
         </Row>
