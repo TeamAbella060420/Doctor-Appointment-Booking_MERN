@@ -3,6 +3,7 @@ import HeroSlide from "../components/UI/HeroSlide";
 import Helmet from "../components/Helmet/Helmet";
 import { Container, Col, Row } from "reactstrap";
 import FindCarForm from "../components/UI/FindCarForm";
+import AboutSection from '../components/UI/AboutSection';
 
 const Home = () => {
   return (
@@ -29,7 +30,9 @@ const Home = () => {
 
       </section>
 
-      {/* ==================== Hero Section ======================= */}
+      {/* ==================== About Section ======================= */}
+
+      <AboutSection />
 
     </Helmet>
   );
