@@ -45,6 +45,15 @@
   color: #7c8a97;
 }
 
+.hero__slider-section {
+  position: relative;
+  z-index: 10;
+}
+
+.hero__row {
+  position: absolute;
+}
+
 .form__row {
     background: #fff;
     box-shadow: 5px 5px 15px -5px #7c8a97;
