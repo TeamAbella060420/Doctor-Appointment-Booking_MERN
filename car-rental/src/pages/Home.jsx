@@ -4,6 +4,9 @@ import Helmet from "../components/Helmet/Helmet";
 import { Container, Col, Row } from "reactstrap";
 import FindCarForm from "../components/UI/FindCarForm";
 import AboutSection from '../components/UI/AboutSection';
+import ServicesList from "../components/UI/ServicesList";
+import carData from "../assets/data/carData";
+import CarItem from "../components/UI/CarItem";
 
 const Home = () => {
   return (
@@ -33,6 +36,47 @@ const Home = () => {
       {/* ==================== About Section ======================= */}
 
       <AboutSection />
+
+      {/* ==================== ServiceList Section ======================= */}
+
+      <section>
+        <Container>
+          <Row>
+            <Col lg='12' className="mb-5 text-center">
+              <h6 className="section__subtitle">
+                See our
+              </h6>
+              <h4 className="section__title">
+                Popular Services
+              </h4>
+            </Col>
+
+            <ServicesList />
+          </Row>
+        </Container>
+      </section>
+
+      {/* ==================== Car offer Section ======================= */}
+
+      <section>
+        <Container>
+          <Row>
+            <Col lg='12' className="text-center mb-5">
+              <h6 className="section__subtitle">
+                Come with
+              </h6>
+              <h2 className="section__title">
+                Hot Offers
+              </h2>
+            </Col>
+            {
+              carData.slice(0,6).map(item => (
+                <CarItem data={item} key={item.id}/>
+              ))
+            }
+          </Row>
+        </Container>
+      </section>
 
     </Helmet>
   );
