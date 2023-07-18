@@ -10,9 +10,9 @@ const Testimonial = () => {
     dots: true,
     infinite: true,
     autoplay: true,
-    speed: 3000,
+    speed: 1000,
     swipeToSlide: true,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 2000,
     slidesToShow: 3,
     slidesToScroll: 1,
     responsive: [
@@ -32,7 +32,6 @@ const Testimonial = () => {
             slidesToScroll: 1,
           },
         },
-        // Add more responsive configurations as needed
       ],
   };
 
@@ -49,7 +48,7 @@ const Testimonial = () => {
         <div className="mt-3 d-flex align-items-center gap-4">
           <img src={ava01} alt="" className="w-25 h-25 rounded-2" />
           <div>
-            <h6 className="mb-0 mt-3">John Doe</h6>
+            <h6 className="mb-0 mt-3">Juan</h6>
             <p className="section__description">Customer</p>
           </div>
         </div>
@@ -66,7 +65,7 @@ const Testimonial = () => {
         <div className="mt-3 d-flex align-items-center gap-4">
           <img src={ava02} alt="" className="w-25 h-25 rounded-2" />
           <div>
-            <h6 className="mb-0 mt-3">John Doe</h6>
+            <h6 className="mb-0 mt-3">Marites</h6>
             <p className="section__description">Customer</p>
           </div>
         </div>
@@ -83,7 +82,7 @@ const Testimonial = () => {
         <div className="mt-3 d-flex align-items-center gap-4">
           <img src={ava03} alt="" className="w-25 h-25 rounded-2" />
           <div>
-            <h6 className="mb-0 mt-3">John Doe</h6>
+            <h6 className="mb-0 mt-3">Pedro</h6>
             <p className="section__description">Customer</p>
           </div>
         </div>
@@ -100,7 +99,7 @@ const Testimonial = () => {
         <div className="mt-3 d-flex align-items-center gap-4">
           <img src={ava04} alt="" className="w-25 h-25 rounded-2" />
           <div>
-            <h6 className="mb-0 mt-3">John Doe</h6>
+            <h6 className="mb-0 mt-3">Marisol</h6>
             <p className="section__description">Customer</p>
           </div>
         </div>
