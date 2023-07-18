@@ -15,7 +15,7 @@ const Home = () => {
   return (
     <Helmet title="Home">
       {/* ==================== Hero Section ======================= */}
-      
+
       <section className="p-0 hero__slider-section">
         <HeroSlide />
 
@@ -91,12 +91,14 @@ const Home = () => {
 
       {/* ==================== Blog Section ======================= */}
 
-      <section>
+      <section className="mb-4">
         <Container>
           <Row>
-            <Col lg="12" className="mt-5 mb-5 text-center">
-              <BlogList />
+            <Col lg="12" className="mb-5 text-center">
+            <h6 className="section__subtitle">Explore our blogs</h6>
+              <h2 className="section__title">Latest Blogs</h2>
             </Col>
+              <BlogList />
           </Row>
         </Container>
       </section>
