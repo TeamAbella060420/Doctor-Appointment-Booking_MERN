@@ -15,6 +15,10 @@ const BecomeDriverSection = () => {
             <h2 className="section__title become__driver-title">
                 Do you want to earn with us? So don't be late.
             </h2>
+
+            <button className="btn become__driver-btn mt-4">
+                Become a driver
+            </button>
           </Col>
         </Row>
       </Container>
