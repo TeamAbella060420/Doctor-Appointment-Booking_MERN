@@ -1,11 +1,10 @@
 import React from "react";
 import { Col } from "reactstrap";
 import { Link } from "react-router-dom";
-import '../../styles/car-item.css'
+import "../../styles/car-item.css";
 
 const CarItem = (props) => {
-  const { imgUrl, model, carName, automatic, speed, price } =
-    props.data;
+  const { imgUrl, model, carName, automatic, speed, price } = props.data;
 
   return (
     <Col lg="4" md="4" sm="6" className="mb-5">
@@ -21,18 +20,26 @@ const CarItem = (props) => {
           </h6>
 
           <div className="car__item-info d-flex align-items-center justify-content-between mt-3 mb-4">
-            <span><i class="ri-car-line"></i>{model}</span>
-            <span><i class="ri-settings-3-line"></i>{automatic}</span>
-            <span><i class="ri-timer-flash-line"></i>{speed}</span>
+            <span>
+              <i class="ri-car-line"></i>
+              {model}
+            </span>
+            <span>
+              <i class="ri-settings-3-line"></i>
+              {automatic}
+            </span>
+            <span>
+              <i class="ri-timer-flash-line"></i>
+              {speed}
+            </span>
           </div>
 
-            <button className="w-50 car__item-btn car__btn-rent">
-                <Link to={`/cars/${carName}`}>Rent</Link>
-            </button>
-            <button className="w-50 car__item-btn car__btn-details">
-                <Link to={`/cars/${carName}`}>Rent</Link>
-            </button>
-            
+          <button className="w-50 car__item-btn car__btn-rent">
+            <Link to={`/cars/${carName}`}>Rent</Link>
+          </button>
+          <button className="w-50 car__item-btn car__btn-details">
+            <Link to={`/cars/${carName}`}>Rent</Link>
+          </button>
         </div>
       </div>
     </Col>
