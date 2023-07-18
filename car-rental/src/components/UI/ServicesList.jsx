@@ -5,16 +5,29 @@ import servicesData from '../../assets/data/serviceData'
 
 const ServicesList = () => {
   return (
-    <div>ServicesList</div>
+    <>
+        {
+        servicesData.map(data => (
+            <ServiceItem item={data} key={data.id}/>
+            ))
+        }
+    </>
   )
 }
 
 const ServiceItem = ({item}) => {
-    <Col lg='4' md='4' sm='6'>
+    return (
+    <Col lg='4' md='4' sm='6' className='mb-3'>
         <div className="service__item">
-            
+            <span className='mb-3'>
+            <i className={item.icon} />
+            </span>
+            <h6>{item.title}</h6>
+            <p className="section__dexcription">{item.desc}</p>
         </div>
     </Col>
+    )
 }
+
 
 export default ServicesList
