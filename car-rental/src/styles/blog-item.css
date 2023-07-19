@@ -19,10 +19,22 @@
 }
 
 .blog__author {
-    color: #000d6b;
-    font-weight: 600;
+  color: #000d6b;
+  font-weight: 600;
 }
 
 .blog__author i {
-    font-weight: 500;
+  font-weight: 500;
+}
+
+.blog__title {
+  text-decoration: none;
+  color: #000d6b;
+  font-weight: 600;
+  font-size: 1.2rem;
+  transition: 0.3s;
+}
+
+.blog__title:hover {
+  color: #f9a826;
 }
