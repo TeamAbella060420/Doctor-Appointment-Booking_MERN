@@ -17,7 +17,7 @@ const BlogList = () => {
 const BlogItem = ({ data }) => {
   const { imgUrl, title, author, date, time, description } = data;
   return (
-    <Col lg="4" md="4" sm="6">
+    <Col lg="4" md="6" sm="6">
       <div className="blog__item">
         <img src={imgUrl} alt="" className="w-100" />
         <div className="blog__info p-3">
