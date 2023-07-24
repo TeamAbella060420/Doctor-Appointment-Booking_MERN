@@ -80,3 +80,69 @@
     width: 100% !important;
     outline: none !important;
 }
+
+@media only screen and (max-width: 992px) {
+    .find__cars-left {
+      padding: 55px 22px;
+    }
+
+    .find__cars-left h2 {
+      font-size: 1.5rem;
+    }
+
+    .form {
+      padding: 30px 10px;
+    }
+
+    .form__group input, .select__group select {
+      padding: 10px 6px;
+      font-size: .8rem;
+    }
+
+    .hero__form {
+      bottom: -100px;
+    }
+}
+
+@media only screen and (max-width: 765px) {
+    .find__cars-left {
+      padding-top: 20px;
+      padding-bottom: 0;
+      background: #fff;
+      text-align: center;
+    }
+
+    .find__cars-left h2 {
+      color: #000d6b;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .form__group {
+      width: 100%;
+      margin: auto;
+      margin-bottom: 15px;
+    }
+
+    .form__group input {
+      font-size: .7rem !important;
+    }
+
+    .select__group {
+      width: 100%;
+      padding-right: 10px;
+      font-size: .7rem;
+    }
+
+    .find__car-btn {
+      font-size: .8rem;
+    }
+
+    .find__cars-left h2 {
+      font-size: 1rem;
+    }
+
+    .hero__form {
+      bottom: -250px;
+    }
+}
