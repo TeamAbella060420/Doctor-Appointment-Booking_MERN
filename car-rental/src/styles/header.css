@@ -186,8 +186,9 @@
     top: 0;
     left: 0;
     z-index: 9999;
+    display: none;
   }
-
+  
   .menu {
     width: 250px;
     height: 100%;
@@ -202,5 +203,9 @@
     color: #000d6b ;
     font-size: 1.3rem;
     font-weight: 600;
+  }
+
+  .menu__active {
+    display: block;
   }
 }
