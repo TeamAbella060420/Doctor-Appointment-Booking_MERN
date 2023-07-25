@@ -5,7 +5,7 @@ import AboutSection from '../components/UI/AboutSection';
 const About = () => {
   return (
     <Helmet title='About'>
-      <AboutSection />
+      <dir>About</dir>
     </Helmet>
 
   )
