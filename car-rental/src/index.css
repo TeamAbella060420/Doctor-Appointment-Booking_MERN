@@ -18,9 +18,9 @@ h3,
 h4,
 h5,
 h6 {
-  color: #000d6b;
-  font-weight: 600;
-  margin-bottom: 0;
+  color: #000d6b !important;
+  font-weight: 600 !important;
+  margin-bottom: 0 !important;
 }
 
 h3,
@@ -54,9 +54,9 @@ ul {
 }
 
 .section__subtitle {
-  color: #f9a826;
-  font-weight: 600;
-  font-size: 1.2rem;
+  color: #f9a826 !important;
+  font-weight: 600 !important;
+  font-size: 1.2rem !important;
 }
 
 .section__description {
@@ -94,7 +94,7 @@ section {
   }
 
   .section__subtitle {
-    font-size: 1.1rem;
+    font-size: 1.1rem !important;
   }
 }
 
