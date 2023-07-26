@@ -2,3 +2,27 @@
     border: 1px solid #7c8a972c;
     border-radius: 4px;
 }
+
+.single__member-social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+}
+
+.single__member-social a i {
+    width: 28px;
+    height: 28px;
+    color: #000d6b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    border-radius: 50%;
+    font-size: .9rem;
+    font-weight: 600;
+}
+
+.single__member-social a {
+    text-decoration: none;
+}
