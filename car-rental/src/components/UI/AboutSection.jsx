@@ -1,11 +1,18 @@
 import React from "react";
 import { Container, Row, Col } from "reactstrap";
 import "../../styles/about-section.css";
-import bmw from '../../assets/all-images/cars-img/bmw-offer.png'
+import bmw from "../../assets/all-images/cars-img/bmw-offer.png";
 
-const AboutSection = () => {
+const AboutSection = ({ aboutClass }) => {
   return (
-    <section>
+    <section
+      className="about__section"
+      style={
+        aboutClass === "abouPage"
+          ? { marginTop: "280px" }
+          : { marginTop: "0px" }
+      }
+    >
       <Container>
         <Row>
           <Col lg="6" md="6">
@@ -23,24 +30,34 @@ const AboutSection = () => {
             </div>
             <div className="about__section-item d-flex align-items-center">
               <p className="section__description d-flex align-items-center gap-2">
-              <i class="ri-checkbox-circle-line"></i> Lorem ipsum dolor sit amet.
+                <i class="ri-checkbox-circle-line"></i> Lorem ipsum dolor sit
+                amet.
               </p>
-              <p className="section__description d-flex align-items-center gap-2" style={{marginLeft: '1rem'}}>
-              <i class="ri-checkbox-circle-line"></i> Lorem ipsum dolor sit amet.
+              <p
+                className="section__description d-flex align-items-center gap-2"
+                style={{ marginLeft: "1rem" }}
+              >
+                <i class="ri-checkbox-circle-line"></i> Lorem ipsum dolor sit
+                amet.
               </p>
             </div>
             <div className="about__section-item d-flex align-items-center ">
               <p className="section__description d-flex align-items-center gap-2">
-              <i class="ri-checkbox-circle-line"></i> Lorem ipsum dolor sit amet.
+                <i class="ri-checkbox-circle-line"></i> Lorem ipsum dolor sit
+                amet.
               </p>
-              <p className="section__description d-flex align-items-center gap-2" style={{marginLeft: '1rem'}}>
-              <i class="ri-checkbox-circle-line"></i> Lorem ipsum dolor sit amet.
+              <p
+                className="section__description d-flex align-items-center gap-2"
+                style={{ marginLeft: "1rem" }}
+              >
+                <i class="ri-checkbox-circle-line"></i> Lorem ipsum dolor sit
+                amet.
               </p>
             </div>
           </Col>
           <Col lg="6" md="6">
             <div className="about__img">
-              <img src={bmw} alt="" className="w-100"/>
+              <img src={bmw} alt="" className="w-100" />
             </div>
           </Col>
         </Row>
