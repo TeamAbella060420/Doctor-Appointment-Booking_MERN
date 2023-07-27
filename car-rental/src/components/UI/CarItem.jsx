@@ -33,13 +33,22 @@ const CarItem = (props) => {
               {speed}
             </span>
           </div>
-
-          <button className="w-50 car__item-btn car__btn-rent">
-            <Link to={`/cars/${carName}`} >Rent</Link>
-          </button>
-          <button className="w-50 car__item-btn car__btn-details">
-            <Link to={`/cars/${carName}`} >Details</Link>
-          </button>
+          <Link to={`/cars/${carName}`}>
+            <button
+              className="w-50 car__item-btn car__btn-rent"
+              style={{ color: "white" }}
+            >
+              Rent
+            </button>
+          </Link>
+          <Link to={`/cars/${carName}`}>
+            <button
+              className="w-50 car__item-btn car__btn-details"
+              style={{ color: "white" }}
+            >
+              Details
+            </button>
+          </Link>
         </div>
       </div>
     </Col>
