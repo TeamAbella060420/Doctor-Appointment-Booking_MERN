@@ -47,10 +47,10 @@ const BookingForm = () => {
       </FormGroup>
 
       <FormGroup className="booking__form d-inline-block ms-1 mb-4">
-        <input type="text" placeholder="To Address" />
+        <input type="date" placeholder="Journey Date" />
       </FormGroup>
       <FormGroup className="booking__form d-inline-block ms-1 mb-4">
-        <input type="text" placeholder="To Address" />
+        <input type="time" placeholder="Journey Time" />
       </FormGroup>
     </Form>
   );
