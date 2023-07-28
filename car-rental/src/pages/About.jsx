@@ -6,13 +6,13 @@ import BecomeDriverSection from "../components/UI/BecomeDriverSection";
 import { Col, Container, Row } from "reactstrap";
 import driveImg from "../assets/all-images/drive.jpg";
 import OurMembers from "../components/UI/OurMembers";
-import '../styles/about.css';
+import "../styles/about.css";
 
 const About = () => {
   return (
     <Helmet title="About">
       <CommonSection data="About Us" />
-      <AboutSection aboutClass = 'aboutPage'/>
+      <AboutSection aboutClass="aboutPage" />
       <div className="about__page-section">
         <Container>
           <Row className="mb-5">
@@ -55,26 +55,20 @@ const About = () => {
             </Col>
           </Row>
         </Container>
-
       </div>
       <BecomeDriverSection />
 
-        <section>
-          <Container>
-            <Row>
-              <Col lg='12' className="mt-5 mb-5 text-center">
-                <h6 className="section__subtitle">
-                  Experts
-                </h6>
-                <h2 className="section__title">
-                  Our Members
-                </h2>
-              </Col>
-                <OurMembers />
-            </Row>
-          </Container>
-        </section>
-        
+      <section>
+        <Container>
+          <Row>
+            <Col lg="12" className="mt-5 mb-5 text-center">
+              <h6 className="section__subtitle">Experts</h6>
+              <h2 className="section__title">Our Members</h2>
+            </Col>
+            <OurMembers />
+          </Row>
+        </Container>
+      </section>
     </Helmet>
   );
 };
