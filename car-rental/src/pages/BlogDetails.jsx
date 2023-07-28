@@ -25,7 +25,24 @@ const BlogDetails = () => {
           <Row>
             <Col lg="8" md="8">
               <div className="blog__details">
-                <img src={singleBlogItem.img} alt="" />
+                <img src={singleBlogItem.imgUrl} alt="w-100" />
+                <h2 className="section__title">{singleBlogItem.title}</h2>
+
+                <div className="blog__publisher d-flex align-items-center gap-4 mb-4">
+                  <span className="blog__author">
+                    <i className="ri-user-line"></i> {singleBlogItem.author}
+                  </span>
+                  <span className="d-flex align-items-center gap-1 section__description">
+                    <i className="ri-calendar-line"></i> {singleBlogItem.date}
+                  </span>
+                  <span className="d-flex align-items-center gap-1 section__description">
+                    <i className="ri-time-line"></i> {singleBlogItem.time}
+                  </span>
+                </div>
+
+                <p className="psection__description">
+                  {singleBlogItem.description}
+                </p>
               </div>
             </Col>
           </Row>
