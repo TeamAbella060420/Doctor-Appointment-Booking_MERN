@@ -1,13 +1,27 @@
-import React from "react";
+import React, {useEffect} from "react";
 import Helmet from "../components/Helmet/Helmet";
 import carData from "../assets/data/carData";
 import { Container, Col, Row } from "reactstrap";
 import { useParams } from "react-router-dom";
+import BookingForm from "../components/UI/BookingForm";
+import PaymentMethod from "../components/UI/PaymentMethod";
 
 const CarDetails = () => {
-  const { slug } = useParams();
 
+  
+  const { slug } = useParams();
+  
   const singleCarItem = carData.find((item) => item.carName === slug);
+  
+  // Function to scroll to the top of the component
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0,});
+  };
+
+  // Call the scrollToTop function when the component mounts
+  useEffect(() => {
+    scrollToTop();
+  }, [singleCarItem]);
 
   return (
     <Helmet title={singleCarItem.carName}>
@@ -80,6 +94,18 @@ const CarDetails = () => {
                 <h4 className="mb-4">
                   Booking Information
                 </h4>
+
+                <BookingForm />
+              </div>
+            </Col>
+
+            <Col lg='5' className="mt-5">
+              <div className="payment__info mt-5">
+                <h4 className="mb-4">
+                  Payment Method
+                </h4>
+
+                <PaymentMethod />
               </div>
             </Col>
           </Row>
