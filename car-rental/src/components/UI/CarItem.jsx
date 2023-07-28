@@ -1,16 +1,29 @@
-import React from "react";
+import React, {useEffect} from "react";
 import { Col } from "reactstrap";
 import { Link } from "react-router-dom";
 import "../../styles/car-item.css";
 
 const CarItem = (props) => {
+
+    // Function to scroll to the top of the component
+    const scrollToTop = () => {
+      window.scrollTo({ top: 0,});
+    };
+  
+    // Call the scrollToTop function when the component mounts
+    useEffect(() => {
+      scrollToTop();
+    }, []);
+
   const { imgUrl, model, carName, automatic, speed, price } = props.data;
 
   return (
     <Col lg="4" md="4" sm="6" className="mb-5">
       <div className="car__item">
         <div className="car__img">
-          <img src={imgUrl} alt="" className="w-100" />
+          <Link to={`/cars/${carName}`}>
+            <img src={imgUrl} alt="" className="w-100" />
+          </Link>
         </div>
 
         <div className="car__item-content mt-4">
