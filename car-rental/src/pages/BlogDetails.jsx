@@ -43,6 +43,33 @@ const BlogDetails = () => {
                 <p className="psection__description">
                   {singleBlogItem.description}
                 </p>
+                <h6 className="ps-5 fw-normal">
+                  <blockquote className="fs-4">
+                    {singleBlogItem.quote}
+                  </blockquote>
+                </h6>
+                <p className="psection__description">
+                  {singleBlogItem.description}
+                </p>
+              </div>
+
+              <div className="comment__list mt-5">
+                <h4 className="mb-5">3 comments</h4>
+                <div className="single__comment d-flex gap-3">
+                  <div className="comment__content">
+                    <h6>David Visaya</h6>
+                    <p className="section__description mb-0">28 July 2023</p>
+                    <p className="section__description">
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Ratione aut esse provident, consectetur aspernatur dolorum
+                      facere a itaque maxime quidem!
+                    </p>
+                  </div>
+                </div>
+
+                <span className="replay d-flex align-items-center gap-1">
+                  <i class="ri-reply-line"></i> Replay
+                </span>
               </div>
             </Col>
           </Row>
