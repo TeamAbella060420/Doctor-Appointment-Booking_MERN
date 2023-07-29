@@ -13,14 +13,14 @@ const BlogDetails = () => {
   const singleBlogItem = blogData.find((item) => item.title === slug);
 
   // Function to scroll to the top of the component
-  // const scrollToTop = () => {
-  //   window.scrollTo({ top: 0 });
-  // };
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0 });
+  };
 
-  // // Call the scrollToTop function when the component mounts
-  // useEffect(() => {
-  //   scrollToTop();
-  // }, [singleBlogItem]);
+  // Call the scrollToTop function when the component mounts
+  useEffect(() => {
+    scrollToTop();
+  }, [singleBlogItem]);
   return (
     <Helmet title={singleBlogItem.title}>
       <section>
@@ -69,7 +69,7 @@ const BlogDetails = () => {
                       facere a itaque maxime quidem!
                     </p>
                     <span className="replay d-flex align-items-center gap-1">
-                      <i class="ri-reply-line"></i> Replay
+                      <i class="ri-reply-line"></i> Reply
                     </span>
                   </div>
                 </div>
