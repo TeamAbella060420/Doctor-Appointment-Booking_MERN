@@ -3,6 +3,7 @@ import { Container, Row, Col, Form, FormGroup, Input } from "reactstrap";
 import Helmet from "../components/Helmet/Helmet";
 import CommonSection from "../components/UI/CommonSection";
 import { Link } from "react-router-dom";
+import '../styles/contact.css'
 
 const socialLinks = [
   {
@@ -35,10 +36,10 @@ const Contact = () => {
 
               <Form>
                 <FormGroup className="contact__form">
-                  <Input placeholder="Your Name" type="text" />
+                  <Input className="input" placeholder="Your Name" type="text" />
                 </FormGroup>
                 <FormGroup className="contact__form">
-                  <Input placeholder="Email" type="text" />
+                  <Input  className="input" placeholder="Email" type="text" />
                 </FormGroup>
                 <FormGroup className="contact__form">
                   <textarea
@@ -49,7 +50,7 @@ const Contact = () => {
                 </FormGroup>
 
                 <button className="btn contact__btn mb-3" type="submit">
-                  Send
+                  Send Message
                 </button>
               </Form>
             </Col>
@@ -77,7 +78,7 @@ const Contact = () => {
                 <h6 className="mt-3 fs-6">Follow us</h6>
                 <div className="d-flex gap-4 mt-3">
                   {socialLinks.map((item, index) => (
-                    <Link to={item.url} key={item.index}>
+                    <Link to={item.url} key={index} className="social__link-icon">
                       <i className={item.icon}></i>
                     </Link>
                   ))}
