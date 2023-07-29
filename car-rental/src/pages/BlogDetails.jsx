@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
-import { Container, Row, Col, Form, FormGroup, Input,  } from "reactstrap";
-import { useParams } from "react-router-dom";
+import { Container, Row, Col, Form, FormGroup, Input } from "reactstrap";
+import { Link, useParams } from "react-router-dom";
 import blogData from "../assets/data/blogData";
 import Helmet from "../components/Helmet/Helmet";
 import "../styles/blog-details.css";
@@ -28,7 +28,11 @@ const BlogDetails = () => {
           <Row>
             <Col lg="8" md="8">
               <div className="blog__details mt-5">
-                <img src={singleBlogItem.imgUrl} alt="w-100" className="mb-5"/>
+                <img
+                  src={singleBlogItem.imgUrl}
+                  alt="w-100"
+                  className="mb-5 w-100"
+                />
                 <h2 className="section__title">{singleBlogItem.title}</h2>
 
                 <div className="blog__publisher d-flex align-items-center gap-4 mb-4">
@@ -68,7 +72,9 @@ const BlogDetails = () => {
                       Ratione aut esse provident, consectetur aspernatur dolorum
                       facere a itaque maxime quidem!
                     </p>
-                    <span className="replay d-flex align-items-center gap-1">
+                    <span className="replay d-flex align-items-center gap-2">
+                      <i class="ri-thumb-up-line"></i>
+                      <i class="ri-thumb-down-line"></i>
                       <i class="ri-reply-line"></i> Reply
                     </span>
                   </div>
@@ -96,10 +102,29 @@ const BlogDetails = () => {
                       ></textarea>
                     </FormGroup>
 
-                    <button className="btn comment__btn mt-3">Post a comment</button>
+                    <button className="btn comment__btn mt-3">
+                      Post a comment
+                    </button>
                   </Form>
                 </div>
               </div>
+            </Col>
+
+            <Col lg="4" md="4" className="mt-5">
+              <div className="recent__post">
+                <h5 className="fw-bold">Recent Posts</h5>
+              </div>
+
+              {blogData.map((item) => (
+                <div className="recent__blog-post mb-4" key={item.id}>
+                  <div className="recent__blog-item d-flex gap-3">
+                    <img src={item.imgUrl} alt="" className="w-25 rounded-2" />
+                    <h6>
+                      <Link to={`/blogs/${item.title}`}>{item.title}</Link>
+                    </h6>
+                  </div>
+                </div>
+              ))}
             </Col>
           </Row>
         </Container>
