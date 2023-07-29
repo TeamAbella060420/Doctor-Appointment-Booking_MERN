@@ -34,7 +34,49 @@ blockquote {
 }
 
 .comment__btn {
-    color: #fff !important;
-    background: #000d6b !important;
-    margin-bottom: 10px;
+  color: #fff !important;
+  background: #000d6b !important;
+  margin-bottom: 10px;
+}
+
+.recent__blog-item h6 a {
+  text-decoration: none;
+  color: #000d6b;
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 768px) {
+  .recent__post {
+    margin-top: 30px;
+  }
+
+  .leave__comment-form Input,
+  .leave__comment-form textarea {
+    font-size: 0.7rem;
+  }
+
+  .comment__btn {
+    padding: 5px 10px;
+    font-size: .8rem;
+    margin-top: 0px !important;
+  }
+
+  .leave__comment-form h4{
+    font-size: 1.2rem;
+  }
+
+  .single__comment img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .comment__content p {
+    font-size: .8rem;
+    line-height: 1.4rem;
+  }
+
+  .blog__details p {
+    font-size: .8rem;
+    line-height: 1.4rem;
+  }
 }
